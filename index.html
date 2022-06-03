@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" text="">
+    <style>
+        p {
+            color: blue;
+            border: 2px solid black;
+        }
+        .base {
+            border: 4px outset green;
+        }
+        .extra-sale {
+            border: 4px outset yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+        Подключение css к документу. 4 способа:
+        1. inline style (линейный)
+        <p style="font-size: 3em; color: brown;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, suscipit?</p>
+        Не рекомеднуемый способ. По причине невозможности реиспользования и большого кол-ва css в разметке. 
+        Из плюсов: имеет самый высокий приоритет.
+
+        2. тег <head><style>...</style></head>
+        Имеет средний приоритет.
+        Не рекомеднуемый способ. Из-за увеличения веса страницы.
+        Примечание: можно использовать в учебных проектах, но не в коммерческих.
+
+        3. Через @import.
+        Приоритет ниже среднего.
+        Используется редко, а если и нужен, то для подключения внешних ресурсов (внешний (по url) css файл)
+
+        4. Тег <link></link>.
+        Самый низкий приоритет.
+        Позволяет подключить (внешний и внутренний) css документ к html через атрибут.
+    -->
+    <p style="font-size: 3em; color: brown;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, suscipit?</p>
+    <p class="base extra-sale">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat mollitia autem quidem?</p>
+
+    <i>Lorem ipsum dolor sit amet.</i>
+    <hr>
+    <em>Lorem ipsum dolor sit amet.</em>
+    <hr>
+    <span class="italic">Lorem ipsum dolor sit amet.</span>
+    <hr>
+    <b>Lorem ipsum dolor sit amet.</b>
+    <br>
+    <strong>Lorem ipsum dolor sit amet.</strong>
+    <hr>
+    <span class="bold">Lorem ipsum dolor sit amet.</span>
+    <hr>
+    <p>Lorem <u><b><i>ipsum</i></b></u> dolor sit amet.</p>
+    <p>Lorem ipsum <del>dolor</del> sit amet.</p>
+
+    <ul>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Iste, natus dicta.</li>
+        <li>Veniam, ipsam possimus!</li>
+        <li>Perferendis, nobis magni?</li>
+        <li>Aperiam, doloremque odit.</li>
+        <li>Sunt, fugit in!</li>
+    </ul>
+
+    <ol>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Aut, fuga rerum!</li>
+        <li>Iusto, rerum molestias?</li>
+        <li>Possimus, culpa tempora.</li>
+        <li>Accusamus, beatae mollitia.</li>
+    </ol>
+
+    <div class="img-container">
+        <h2>Picture</h2>
+        <a href="">
+            <img src="https://uxwing.com/wp-content/themes/uxwing/download/44-hand-gestures/good.png" alt="Ты молодец!">
+        </a>
+    </div>
+</body>
+
+</html>

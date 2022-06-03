@@ -1,0 +1,45 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+}
+
+body {
+    background-color: gray; 
+    margin: 0;
+    padding: 100px;
+}
+
+p {
+    padding: 5px;
+}
+
+span.italic {
+    font-style: italic;
+}
+
+span.bold {
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.img-container {
+    width: 70%;
+    height: 100%;
+    border: 2px solid lightskyblue;
+    background-color: brown; 
+    margin: auto; /* центрирование блока */
+}
+
+/* > - позволяет обратиться к элементу на конкретном уровне вложенности
+    " " - позволяет обратиться к элементу на любом уровне вложенности
+*/
+.img-container > a {
+    cursor: cell;
+}
+
+.img-container img {
+    width: 100%;
+}
